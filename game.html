@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./game.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap");
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Minimax Tic-Tac-Toe</h1>
+    <div class="content">
+      <div class="value-tab">
+        <div class="tab">
+          <label for=""> Depth: </label>
+          <input type="number" name="" id="depth_level" min="1" value="10" />
+        </div>
+        <div class="tab">
+          <label for=""> Start-First: </label>
+          <input type="checkbox" name="" id="check-box" checked />
+        </div>
+        <div class="tab">
+          <button type="submit" onclick="start()" class="button-30">
+            Start / Re-Start
+          </button>
+        </div>
+
+        <div class="tab">
+          <p id="gameinfo">GAME-STATUS</p>
+        </div>
+      </div>
+      <div class="board">
+        <table>
+          <tr>
+            <td class="left left-top" onclick="human(0,0)" id="00"></td>
+            <td class="middle-top" onclick="human(0,1)" id="01"></td>
+            <td class="right right-top" onclick="human(0,2)" id="02"></td>
+          </tr>
+          <tr>
+            <td class="left left-middle" onclick="human(1,0)" id="10"></td>
+            <td onclick="human(1,1)" id="11"></td>
+            <td class="right" onclick="human(1,2)" id="12"></td>
+          </tr>
+          <tr>
+            <td class="left left-bottom" onclick="human(2,0)" id="20"></td>
+            <td class="middle-bottom" onclick="human(2,1)" id="21"></td>
+            <td class="right right-bottom" onclick="human(2,2)" id="22"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="./game.js"></script>
+  </body>
+</html>
