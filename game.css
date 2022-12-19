@@ -126,6 +126,9 @@ td:hover {
 }
 
 @media (max-width: 790px) {
+  h1 {
+    font-size: 28px;
+  }
   .content {
     flex-direction: column;
   }
