@@ -135,5 +135,6 @@ td:hover {
   td {
     width: 100px;
     height: 100px;
+    font-size: 64px;
   }
 }
